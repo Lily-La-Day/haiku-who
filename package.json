@@ -9,6 +9,7 @@
     "serve:flask": "pipenv run flask run -p 5000",
     "build": "webpack -p",
     "postinstall": "[ \"$NODE_ENV\" = \"production\" ] && yarn build || exit 0"
+
   },
   "author": "",
   "license": "ISC",
