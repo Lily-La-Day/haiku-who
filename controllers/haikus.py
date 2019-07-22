@@ -25,7 +25,7 @@ def index():
 
 
 @api.route('/haikus', methods=['POST'])
-@secure_route
+# @secure_route
 def create():
     data = request.get_json()
     haiku, errors = haiku_schema.load(data)
