@@ -1,6 +1,6 @@
 import os
 
-db_uri = os.getenv('DATABASE_URI')
+db_uri = os.getenv('DATABASE_URL')
 
 secret = os.getenv('SECRET', 'secreto')
 
