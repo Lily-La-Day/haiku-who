@@ -25,10 +25,10 @@ So the final step...
 ||||
 |--- |--- |--- |
 |React|JavaScript(ES6)|SCSS|
-|GitHub|postgreSQL|SQLAlchemy
+|Flask|postgreSQL|SQLAlchemy
 |Node.js|Webpack|Yarn
 |bcrypt|jsonwebtoken|axios
-|body-parser|file-loader|
+|body-parser|file-loader|Python
 
 
 ## Deployment
