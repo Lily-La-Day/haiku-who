@@ -44,7 +44,6 @@ class HaikuSubmit extends React.Component {
     if(string.length > 10) {
       const vowels = ['a', 'e', 'i', 'o', 'u', 'y']
       const countOne = string.split('').reduce((count, letter) => {
-
         return vowels.includes(letter.toLowerCase()) ? count + 1 : count
 
       }, 0)
@@ -62,8 +61,6 @@ class HaikuSubmit extends React.Component {
       const syllables = countOne + countTwo + countThree
       console.log(countOne,countTwo,countThree, syllables)
       if (syllables > 15 && syllables < 19) return true
-
-
     }
   }
 
