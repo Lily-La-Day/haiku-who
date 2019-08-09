@@ -6,7 +6,7 @@
 
 Over the course of a week we were given this brief, we were told that we must create a Python/Flask backend that must:
 
-* **Include at least one model **
+* **Include at least one Model** -
 * **Be able to perform full CRUD actions** -
 (Create, Read, Update, Delete)
 * **Include a seeds file**
@@ -108,3 +108,7 @@ haikuCheck(string) {
 ## Challenges and Future Improvements
 
 The haiku function was definitely a challenge but one that I thoroughly enjoyed, I am quite tempted to expand and start allowing other verse forms, I would like to try and make a "sonnet checking" function and maybe a "limerick checking" function. There is so much potential!
+
+I probably need to work on the one that I have here first though.
+
+Overall I had a great time doing this and I learnt a lot, it set me in good stead for my big final project for which I would be using the same technologies. 
