@@ -26,7 +26,7 @@ So the final step...
 |--- |--- |--- |
 |React|JavaScript(ES6)|SCSS|
 |Flask|postgreSQL|SQLAlchemy
-|Node.js|Webpack|Yarn
+|Pipenv|Webpack|Yarn
 |bcrypt|jsonwebtoken|axios
 |body-parser|file-loader|Python
 
@@ -98,10 +98,15 @@ haikuCheck(string) {
   }
 }
 ```
+Before it is a haiku...
 
 <img src="src/images/haiku-submit-before.png" width="400">
 
+When it is a haiku...
+
 <img src="src/images/haiku-submit-after.png" width="400">
+
+(or close enough!)
 
 
 
