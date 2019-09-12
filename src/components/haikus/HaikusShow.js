@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-
+import Auth from '../../lib/Auth'
 
 
 class HaikusShow extends React.Component {
@@ -8,6 +8,7 @@ class HaikusShow extends React.Component {
     super()
 
     this.state = { haiku: null }
+    this.haikuDelete = this.haikuDelete.bind(this)
 
   }
 
@@ -16,6 +17,15 @@ class HaikusShow extends React.Component {
       .then(res => this.setState({ haiku: res.data }))
       .catch(err => console.log(err))
 
+  }
+
+  haikuDelete(e) {
+    if (e.target.value === 'delete this please') {
+      axios.delete(`/api/haikus/${this.props.match.params.id}`)
+        .then(() => this.props.history.push('/haikus'))
+        .catch(err => console.log(err))
+
+    }
   }
 
 
@@ -33,6 +43,12 @@ class HaikusShow extends React.Component {
 
           <span key={haiku.id}><h3 key={haiku.id}> {haiku.text}</h3></span>
 
+          <div className="secret control">
+            <input
+              onChange = {this.haikuDelete}
+              className="input"/>
+
+          </div>
         </div>
       </div>
 

@@ -12,6 +12,7 @@ class HaikuSubmit extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
     this.haikuCheck = this.haikuCheck.bind(this)
 
+
   }
 
   handleChange({ target: { name, value }}) {

@@ -1,6 +1,6 @@
 import os
 
-db_uri = os.getenv('DATABASE_URL')
+db_uri = os.getenv('DATABASE_URL', 'postgres://localhost:5432/haikus')
 
 secret = os.getenv('SECRET', 'secreto')
 
